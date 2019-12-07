@@ -1,4 +1,9 @@
 #!/bin/bash
+CURR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Move to the current directory
+cd ${CURR_DIR}
+
 sudo apt-get install git wget flex bison gperf python python-pip python-setuptools python-serial python-click python-cryptography python-future python-pyparsing python-pyelftools cmake ninja-build ccache
 git submodule update --init --recursive
 export IDF_TOOLS_PATH=$(pwd)/esp-idf
