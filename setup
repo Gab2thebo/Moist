@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo apt-get install git wget flex bison gperf python python-pip python-setuptools python-serial python-click python-cryptography python-future python-pyparsing python-pyelftools cmake ninja-build ccache
+git submodule update --init --recursive
+export IDF_TOOLS_PATH=$(pwd)/esp-idf
+export IDF_PATH=$(pwd)/esp-idf
+cd esp-idf
+./install.sh
+. ./export.sh
