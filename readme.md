@@ -14,10 +14,3 @@ TODO
 ### Server
 
 TODO
-
-
-### Web
-
-TODO
-
-
