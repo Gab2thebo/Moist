@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Start MQTT broker
+mosquitto &
+
+# Start the MQTT client
+npm start
