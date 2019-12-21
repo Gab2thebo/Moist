@@ -1,4 +1,6 @@
-/* Test program to test various ESP32 peripherals
+/*  Moisture Sensor main application
+*
+*   Description: Send the value of a moisture capacitive sensor to the internet.
 *
 */
 
