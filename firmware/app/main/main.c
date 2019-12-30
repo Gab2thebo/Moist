@@ -23,10 +23,6 @@
 static const adc_channel_t channel = ADC_CHANNEL_6;     //GPIO34 if ADC1, GPIO14 if ADC2
 static const adc_atten_t atten = ADC_ATTEN_DB_11;		// 0 - 3.6V
 
-
-
-
-
 void app_main(void)
 {
     /* Configure the IOMUX register for pad BLINK_GPIO (some pads are
@@ -42,17 +38,17 @@ void app_main(void)
     printf("Hello world!\n");
 
     /* Initialize wifi */
-    wifi_init_config_t config = WIFI_INIT_CONFIG_DEFAULT();
-    esp_wifi_init(&config);
+//    wifi_init_config_t config = WIFI_INIT_CONFIG_DEFAULT();
+//    esp_wifi_init(&config);
 
     /* Scan for possible Access Point (AP) */
-    esp_wifi_scan_start();
+//    esp_wifi_scan_start();
 
     /* Wait for scanning to be completed */
    // while(! SYSTEM_EVENT_SCAN_DONE);
 
-    uint16_t accesspoint_number;
-    accesspoint_number = esp_wifi_scan_get_ap_num();
+//    uint16_t accesspoint_number;
+ //   accesspoint_number = esp_wifi_scan_get_ap_num();
 
 
     /* Configure GPIO 34 for ADC acquisition*/

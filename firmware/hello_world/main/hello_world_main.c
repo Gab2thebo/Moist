@@ -48,6 +48,9 @@ void app_main(void)
         int val = adc1_get_raw(ADC1_CHANNEL_0);
         printf("The ADC value of GPIO 36: %d\n",val);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
+
+
+        //TODO: Remove delay and add an averaging to increase ADC accuracy
     }
 
     for (int i = 10; i >= 0; i--) {
